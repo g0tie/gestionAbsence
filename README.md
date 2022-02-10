@@ -41,8 +41,8 @@
   </tr>
   <tr>
     <td>Utilisateur</td>
-    <td>Pouvoir choisir mon rôle en me connectant à l'application</td>
-    <td>Me connecter avec le bon rôle</td>
+    <td>Pouvoir me connecter à l'application</td>
+    <td>Accéder à mon interface</td>
     <td></td>
   </tr>
 </tbody>
