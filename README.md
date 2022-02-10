@@ -47,3 +47,11 @@
   </tr>
 </tbody>
 </table>
+
+## Diagramme de séquence
+[Lien du diagramme de séquence](https://whimsical.com/THyoVEhjC1V41BzgkaNZfX)
+
+## Diagramme de cas d'utilisation
+![image](https://user-images.githubusercontent.com/56622131/153345399-4d9cc024-c729-4c37-9c8a-cc28d171c0a6.png)
+
+
