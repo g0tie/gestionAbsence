@@ -6,7 +6,28 @@
         xmlns:local="clr-namespace:GestionAbsence"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Identifiant" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.504,1.157"/>
+            <TextBox x:Name="login" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Width="195" Grid.Row="1"/>
+        </Grid>
+        <Grid VerticalAlignment="Top" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="password" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Width="195" Grid.Row="1" Height="18"/>
+            <Label Content="Mot de passe" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.479,0.579" Height="26" Width="81"/>
+
+        </Grid>
 
     </Grid>
 </Window>
