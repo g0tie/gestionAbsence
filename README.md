@@ -54,4 +54,5 @@
 ## Diagramme de cas d'utilisation
 ![image](https://user-images.githubusercontent.com/56622131/153345399-4d9cc024-c729-4c37-9c8a-cc28d171c0a6.png)
 
-
+## Diagramme de classe
+![image](https://user-images.githubusercontent.com/70049513/157220911-189ecb74-8077-4600-a416-418045a36473.png)
