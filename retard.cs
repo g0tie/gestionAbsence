@@ -1,62 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace GestionAbsence
 {
     public class Retard
     {
 
-        public int id
+        public int Id
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public DateTime date
+        public DateTime Date
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public int duree
+        public int Duree
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public bool isMatin
+        public bool IsMatin
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public int user_id
+        public List<Justificatif> Justificatifs
         {
-            get => default;
-            set
-            {
-            }
-        }
+            get;
+            set;
 
-        public List<Justificatif> justificatifs
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        } = new List<Justificatif>();
 
-        public void getJustificatifs()
+        public void GetJustificatifs()
         {
             throw new System.NotImplementedException();
         }

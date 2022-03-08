@@ -1,36 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GestionAbsence
 {
     public class JustificatifRepo
     {
-        public Retard Get(int id)
+        public static Justificatif Get(int id)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            return db.Justificatifs.Find(id);
         }
 
-        public System.Collections.Generic.List<Justificatif> getAll()
+        public static List<Justificatif> GetAll()
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            return db.Justificatifs.ToList();
         }
 
-        public void Add(Justificatif justificatif)
+        public static void Add(Justificatif justificatif)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            _ = db.Justificatifs.Add(justificatif);
         }
 
-        public void Delete(Retard justificatif)
+        public static void Delete(Justificatif justificatif)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            _ = db.Justificatifs.Remove(justificatif);
         }
 
-        public void update(Justificatif justificatif)
+        public static void Update(Justificatif justificatif)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            _ = db.Justificatifs.Update(justificatif);
         }
     }
 }

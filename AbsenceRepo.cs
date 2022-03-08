@@ -1,36 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GestionAbsence
 {
     public class AbsenceRepo
     {
-        public Absence Get(int id)
+        public static Absence Get(int id)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            return db.Absences.Find(id);
         }
 
-        public List<Absence> GetAll()
+        public static List<Absence> GetAll()
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            return db.Absences.ToList();
         }
 
-        public void Add(Absence absence)
+        public static void Add(Absence absence)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            _ = db.Absences.Add(absence);
         }
 
-        public void Delete(Absence absence)
+        public static void Delete(Absence absence)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            _ = db.Absences.Remove(absence);
         }
 
-        public void Update(Absence absence)
+        public static void Update(Absence absence)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            _ = db.Absences.Update(absence);
         }
     }
 }

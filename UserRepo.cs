@@ -1,35 +1,39 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace GestionAbsence
 {
     public class UserRepo
     {
-        public User Get(int id)
+        public static User Get(int id)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            return db.Users.Include(i => i.Role).FirstOrDefault(x => x.Id == id);
         }
 
-        public List<User> GetAll()
+        public static List<User> GetAll()
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            return db.Users.Include(a => a.Role).ToList();
         }
 
-        public void Add(User user)
+        public static void Add(User user)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            _ = db.Users.Add(user);
         }
 
-        public void Delete(User user)
+        public static void Delete(User user)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            _ = db.Users.Remove(user);
         }
 
-        public void Update(User user)
+        public static void Update(User user)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            _ = db.Users.Update(user);
         }
     }
 }

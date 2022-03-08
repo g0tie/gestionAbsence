@@ -1,27 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace GestionAbsence
+﻿namespace GestionAbsence
 {
     public class Justificatif
     {
 
-        public int id
+        public int Id
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public string chemin
+        public string Chemin
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
     }
 }

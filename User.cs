@@ -1,102 +1,77 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace GestionAbsence
 {
     public class User
     {
 
-        public int id
+        public int Id
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public String nom
+        public string Nom
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public String prenom
+        public string Prenom
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public string mail
+        public string Mail
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public string password
+        public string Password
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public int role_id
+        public int RoleId
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public Role role
+        public Role Role
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public List<Retard> retards
+        public List<Retard> Retards
         {
-            get => default;
-            set
-            {
-            }
-        }
+            get;
+            set;
+        } = new List<Retard>();
 
-        public List<Absence> absences
+        public List<Absence> Absences
         {
-            get => default;
-            set
-            {
-            }
-        }
+            get;
+            set;
+        } = new List<Absence>();
 
-        public void getAbsences()
+        public void GetAbsences()
         {
             throw new System.NotImplementedException();
         }
 
-        public void getRetards()
+        public void GetRetards()
         {
             throw new System.NotImplementedException();
         }
 
-        public void getRole()
+        public void GetRole()
         {
             throw new System.NotImplementedException();
         }
-    }
-
-    public class CopyOfUser
-    {
     }
 }

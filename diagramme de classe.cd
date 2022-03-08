@@ -2,51 +2,51 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="GestionAbsence.User">
     <Position X="3.75" Y="2.25" Width="2.25" />
-    <AssociationLine Name="role" Type="GestionAbsence.Role">
+    <AssociationLine Name="Role" Type="GestionAbsence.Role">
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.3" Y="0.078" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="retards" Type="GestionAbsence.Retard" FixedToPoint="true">
+    <AssociationLine Name="Retards" Type="GestionAbsence.Retard" FixedToPoint="true">
       <Path>
-        <Point X="6" Y="2.812" />
-        <Point X="8" Y="2.812" />
+        <Point X="6" Y="2.663" />
+        <Point X="8" Y="2.663" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.246" Y="0.114" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="absences" Type="GestionAbsence.Absence" FixedToPoint="true">
+    <AssociationLine Name="Absences" Type="GestionAbsence.Absence" FixedToPoint="true">
       <Path>
-        <Point X="6" Y="4.812" />
-        <Point X="8" Y="4.812" />
+        <Point X="6" Y="4.766" />
+        <Point X="8" Y="4.766" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>BgAAhAAAAAABAAAAAAAAIBAAAAAAIAAAAAAgAgAAAgE=</HashCode>
+      <HashCode>AAACAAMAAIAAAAAAEAAAAAAAACAAAAACACAAAQQAIAQ=</HashCode>
       <FileName>User.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="role" />
+      <Property Name="Role" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
-      <Property Name="retards" />
-      <Property Name="absences" />
+      <Property Name="Retards" />
+      <Property Name="Absences" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GestionAbsence.Role">
     <Position X="0.75" Y="3" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAggA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
       <FileName>role.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GestionAbsence.Retard">
     <Position X="8" Y="1" Width="2.5" />
-    <AssociationLine Name="justificatifs" Type="GestionAbsence.Justificatif" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="Justificatifs" Type="GestionAbsence.Justificatif" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="10.5" Y="2.562" />
-        <Point X="12.25" Y="2.562" />
+        <Point X="10.5" Y="2.433" />
+        <Point X="12.25" Y="2.433" />
         <Point X="12.25" Y="3.25" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
@@ -54,19 +54,19 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAIAAAwCAABAAAAAAAAAAAAAAAAAAAAAAAAAQAAAgA=</HashCode>
+      <HashCode>ABAKAAAACAAAAAAAAAAAAAAAAAAAAAABAAAAAAEAAAA=</HashCode>
       <FileName>retard.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
-      <Property Name="justificatifs" />
+      <Property Name="Justificatifs" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GestionAbsence.Absence">
     <Position X="8" Y="4.25" Width="2.5" />
     <AssociationLine Name="Justificatifs" Type="GestionAbsence.Justificatif" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="10.5" Y="5.188" />
-        <Point X="12.25" Y="5.188" />
+        <Point X="10.5" Y="5.11" />
+        <Point X="12.25" Y="5.11" />
         <Point X="12.25" Y="4.546" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
@@ -74,7 +74,7 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>ABAgAAAgCAABAAAAAAAAAAAAAAAAAAAAAAAAAQAAAgA=</HashCode>
+      <HashCode>ABAKAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAEAIAA=</HashCode>
       <FileName>absence.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -84,36 +84,39 @@
   <Class Name="GestionAbsence.Justificatif">
     <Position X="11.25" Y="3.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <HashCode>AAACAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>justificatif.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GestionAbsence.UserRepo">
     <Position X="3" Y="9" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAIGAAA=</HashCode>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAAAEAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>UserRepo.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GestionAbsence.AbsenceRepo">
     <Position X="6" Y="9" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAIGAAA=</HashCode>
-      <FileName>UserRepo.cs</FileName>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAAAEAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>AbsenceRepo.cs</FileName>
+      <NewMemberFileName>UserRepo.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GestionAbsence.RetardRepo">
     <Position X="9" Y="9" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAIGAAA=</HashCode>
-      <FileName>UserRepo.cs</FileName>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAAAEAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>RetardRepo.cs</FileName>
+      <NewMemberFileName>UserRepo.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GestionAbsence.JustificatifRepo">
     <Position X="12" Y="9" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAIGAAA=</HashCode>
-      <FileName>UserRepo.cs</FileName>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAAAEAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>JustificatifRepo.cs</FileName>
+      <NewMemberFileName>UserRepo.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

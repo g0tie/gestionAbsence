@@ -1,62 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace GestionAbsence
 {
     public class Absence
     {
 
-        public int id
+        public int Id
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public bool isJournee
+        public bool IsJournee
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public DateTime date
+        public DateTime Date
         {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public int user_id
-        {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public List<Justificatif> Justificatifs
         {
-            get => default;
-            set
-            {
-            }
-        }
+            get;
+            set;
 
-        public bool isMatin
+        } = new List<Justificatif>();
+
+        public bool IsMatin
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public void getJustificatifs()
+        public void GetJustificatifs()
         {
             throw new System.NotImplementedException();
         }

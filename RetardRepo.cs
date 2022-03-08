@@ -1,36 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace GestionAbsence
 {
     public class RetardRepo
     {
-        public Retard Get(int id)
+        public static Retard Get(int id)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            return db.Retards.Find(id);
         }
 
-        public System.Collections.Generic.List<Retard> getAll()
+        public static List<Retard> GetAll()
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            return db.Retards.ToList();
         }
 
-        public void Add(Retard retard)
+        public static void Add(Retard retard)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            _ = db.Retards.Add(retard);
         }
 
-        public void Delete(Retard retard)
+        public static void Delete(Retard retard)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            _ = db.Retards.Remove(retard);
         }
 
-        public void Update(Retard retard)
+        public static void Update(Retard retard)
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            _ = db.Retards.Update(retard);
         }
     }
 }

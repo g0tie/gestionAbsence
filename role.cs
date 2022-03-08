@@ -1,27 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace GestionAbsence
+﻿namespace GestionAbsence
 {
     public class Role
     {
 
-        public string libelle
+        public string Libelle
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public int id
+        public int Id
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
     }
 }
