@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yLZRXUAwcX9089oTP34JTENaHG7MtRGrmBsZ0GhhBNNBR+D9O36U4FrT2l3tOESI36vPVpzckuisncY74L/Eug==",
+  "dgSpecHash": "HjvdAU9j30wWCffpCEauigWK3lecdCSL+W7LsIfaUsUJjW2ED1l2rzeNqOuOE1G3HX5S5Fpok7KHsuGKJg+R/Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\lefra\\Source\\Repos\\gestionAbsence\\GestionAbsence.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lefra\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
     "C:\\Users\\lefra\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lefra\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\lefra\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.0\\microsoft.data.sqlite.core.5.0.0.nupkg.sha512",

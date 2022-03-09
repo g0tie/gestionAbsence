@@ -8,12 +8,22 @@
     ".NETCoreApp,Version=v5.0": {
       "GestionAbsence/1.0.0": {
         "dependencies": {
+          "CsvHelper": "27.2.1",
           "Microsoft.EntityFrameworkCore": "5.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.0"
+          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.0",
+          "TinyCsvParser": "2.6.1"
         },
         "runtime": {
           "GestionAbsence.dll": {}
+        }
+      },
+      "CsvHelper/27.2.1": {
+        "runtime": {
+          "lib/net5.0/CsvHelper.dll": {
+            "assemblyVersion": "27.0.0.0",
+            "fileVersion": "27.2.1.0"
+          }
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -333,7 +343,15 @@
       "System.Collections.Immutable/5.0.0": {},
       "System.ComponentModel.Annotations/5.0.0": {},
       "System.Diagnostics.DiagnosticSource/5.0.0": {},
-      "System.Memory/4.5.3": {}
+      "System.Memory/4.5.3": {},
+      "TinyCsvParser/2.6.1": {
+        "runtime": {
+          "lib/netstandard2.1/TinyCsvParser.dll": {
+            "assemblyVersion": "2.6.1.0",
+            "fileVersion": "2.6.1.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -341,6 +359,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "CsvHelper/27.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uS5ix5hL9gL5taiAG//CScyJa8Fn1ZOh3FDhDvf4laboESFs84mCNropfp7PIt8xCkyQofljFpqu1B5UnSXjyA==",
+      "path": "csvhelper/27.2.1",
+      "hashPath": "csvhelper.27.2.1.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
@@ -544,6 +569,13 @@
       "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "TinyCsvParser/2.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FfPoO7L6UDAZ6YRZ23C9wz8KoGllGl73AhvCuZCFnt66NFD6WQohLFwI7yavusXh3OTQcBbf6OdAJ2+7TP9n9Q==",
+      "path": "tinycsvparser/2.6.1",
+      "hashPath": "tinycsvparser.2.6.1.nupkg.sha512"
     }
   }
 }

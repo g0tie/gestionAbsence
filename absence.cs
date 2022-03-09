@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GestionAbsence
 {
@@ -37,9 +38,40 @@ namespace GestionAbsence
             set;
         }
 
+        public bool IsRetard
+        {
+            get;
+            set;
+        }
+
+        public string Commentaire
+        {
+            get;
+            set;
+        }
+
+        public int Duree
+
+        {
+            get;
+            set;
+        }
+
+        public int UserId
+
+        {
+            get;
+            set;
+        }
+
         public void GetJustificatifs()
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            Justificatifs = db.Justificatifs.Where(c => c.AbsenceId == Id).ToList();
+        }
+
+        public void GetUser()
+        {
         }
     }
 }

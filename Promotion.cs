@@ -1,43 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace GestionAbsence
 {
-    public class Retard
+    public class Promotion
     {
-
-        public int Id
+        public int Libelle
         {
             get;
             set;
         }
 
-        public DateTime Date
+        public int DateDebut
         {
             get;
             set;
         }
 
-        public int Duree
+        public int DateFin
         {
             get;
             set;
         }
 
-        public bool IsMatin
+        public List<User> Users
         {
             get;
             set;
-        }
+        } = new List<User>();
 
-        public List<Justificatif> Justificatifs
-        {
-            get;
-            set;
-
-        } = new List<Justificatif>();
-
-        public void GetJustificatifs()
+        public void GetUsers()
         {
             throw new System.NotImplementedException();
         }

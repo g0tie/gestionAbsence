@@ -56,3 +56,5 @@ C:\Users\lefra\Source\Repos\gestionAbsence\bin\Debug\net5.0-windows\runtimes\win
 C:\Users\lefra\Source\Repos\gestionAbsence\bin\Debug\net5.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\lefra\Source\Repos\gestionAbsence\bin\Debug\net5.0-windows\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\lefra\Source\Repos\gestionAbsence\obj\Debug\net5.0-windows\GestionAbsence.csproj.CopyComplete
+C:\Users\lefra\Source\Repos\gestionAbsence\bin\Debug\net5.0-windows\TinyCsvParser.dll
+C:\Users\lefra\Source\Repos\gestionAbsence\bin\Debug\net5.0-windows\CsvHelper.dll

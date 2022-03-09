@@ -14,5 +14,11 @@
             get;
             set;
         }
+
+        public int AbsenceId
+        {
+            get;
+            set;
+        }
     }
 }

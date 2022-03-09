@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-
+using System.Linq;
 namespace GestionAbsence
 {
     public class User
@@ -47,31 +47,26 @@ namespace GestionAbsence
             set;
         }
 
-        public List<Retard> Retards
-        {
-            get;
-            set;
-        } = new List<Retard>();
-
         public List<Absence> Absences
         {
             get;
             set;
         } = new List<Absence>();
 
+
         public void GetAbsences()
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            Absences = db.Absences.Where(c => c.UserId == Id).ToList();
         }
 
-        public void GetRetards()
-        {
-            throw new System.NotImplementedException();
-        }
 
         public void GetRole()
         {
-            throw new System.NotImplementedException();
+            using GestionAbsenceDbContext db = new();
+            Role = db.Roles.Where(c => c.Id == RoleId).First();
+
         }
+
     }
 }
