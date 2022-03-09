@@ -12,18 +12,11 @@ namespace GestionAbsence
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            using var reader = new StreamReader("import.csv");
 
-            using (var reader = new StreamReader("import.csv"))
-
-            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
-            {
-                var records = csv.GetRecords<Role>();
-                _ = modelBuilder.Entity<Role>().HasData(records);
-            }
-            
-
-
-
+            using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+            var records = csv.GetRecords<Role>();
+            _ = modelBuilder.Entity<Role>().HasData(records);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
             => options.UseSqlite("Data Source=gestionAbsence.db");

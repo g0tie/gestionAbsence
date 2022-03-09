@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lefra\\Source\\Repos\\gestionAbsence\\GestionAbsence.csproj": {}
+    "C:\\Users\\Romain\\source\\repos\\GestionAbsence\\GestionAbsence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lefra\\Source\\Repos\\gestionAbsence\\GestionAbsence.csproj": {
+    "C:\\Users\\Romain\\source\\repos\\GestionAbsence\\GestionAbsence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lefra\\Source\\Repos\\gestionAbsence\\GestionAbsence.csproj",
+        "projectUniqueName": "C:\\Users\\Romain\\source\\repos\\GestionAbsence\\GestionAbsence.csproj",
         "projectName": "GestionAbsence",
-        "projectPath": "C:\\Users\\lefra\\Source\\Repos\\gestionAbsence\\GestionAbsence.csproj",
-        "packagesPath": "C:\\Users\\lefra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lefra\\Source\\Repos\\gestionAbsence\\obj\\",
+        "projectPath": "C:\\Users\\Romain\\source\\repos\\GestionAbsence\\GestionAbsence.csproj",
+        "packagesPath": "C:\\Users\\Romain\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Romain\\source\\repos\\GestionAbsence\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lefra\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Romain\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

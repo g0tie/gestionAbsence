@@ -23,6 +23,8 @@ namespace GestionAbsence
         public MainWindow()
         {
             InitializeComponent();
+            using GestionAbsenceDbContext db = new();
+            var roles = db.Roles.ToList();
         }
     }
 }
