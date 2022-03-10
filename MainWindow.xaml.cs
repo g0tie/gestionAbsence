@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using Microsoft.EntityFrameworkCore;
 namespace GestionAbsence
 {
     /// <summary>
@@ -24,7 +24,7 @@ namespace GestionAbsence
         {
             InitializeComponent();
             using GestionAbsenceDbContext db = new();
-            var roles = db.Roles.ToList();
+            var roles = db.Users.Include(i => i.Role).ToList();
         }
     }
 }

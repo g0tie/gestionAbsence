@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-namespace GestionAbsence
+namespace GestionAbsence.Models
 {
     public class User
     {

@@ -3,20 +3,36 @@ using System.Text;
 using CsvHelper;
 using System.IO;
 using System.Globalization;
+using GestionAbsence.Models;
+using CsvHelper.Configuration;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace GestionAbsence
 {
-
     public class GestionAbsenceDbContext : DbContext
     {
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            using var reader = new StreamReader("import.csv");
+            var roles = new Role[]
+            {
+                new Role { Id = 1, Libelle = "Admin"},
+                new Role { Id = 2, Libelle = "Formateur"},
+                new Role { Id = 3, Libelle = "Secretaire"},
+                new Role { Id = 4, Libelle = "Apprenant"}
+            };
 
-            using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
-            var records = csv.GetRecords<Role>();
-            _ = modelBuilder.Entity<Role>().HasData(records);
+            var users = new User[]
+            {
+                new User { Id = 1, Nom= "Admin", Prenom="Admin", Mail="Admin@gmail.com", Password="Admin", RoleId=1},
+                new User { Id = 2, Nom= "Formateur", Prenom="Formateur", Mail="Formateur@gmail.com", Password="Formateur", RoleId=2},
+                new User { Id = 3, Nom= "Secretaire", Prenom="Secretaire", Mail="Secretaire@gmail.com", Password="Secretaire", RoleId=3},
+                new User { Id = 4, Nom= "Apprenant", Prenom="Apprenant", Mail="Apprenant@gmail.com", Password="Apprenant", RoleId=4},
+            };
+
+            modelBuilder.Entity<Role>().HasData(roles);
+            modelBuilder.Entity<User>().HasData(users);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
             => options.UseSqlite("Data Source=gestionAbsence.db");

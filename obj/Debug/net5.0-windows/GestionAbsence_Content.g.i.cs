@@ -9,6 +9,5 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("gestionabsence.db")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("import.csv")]
 
 

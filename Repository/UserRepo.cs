@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
-
+using GestionAbsence.Models;
 namespace GestionAbsence
 {
     public class UserRepo
@@ -9,13 +9,12 @@ namespace GestionAbsence
         public static User Get(int id)
         {
             using GestionAbsenceDbContext db = new();
-            return db.Users.Include(i => i.Role).FirstOrDefault(x => x.Id == id);
+            return db.Users.Find(id);
         }
-
         public static List<User> GetAll()
         {
             using GestionAbsenceDbContext db = new();
-            return db.Users.Include(a => a.Role).ToList();
+            return db.Users.ToList();
         }
 
         public static void Add(User user)

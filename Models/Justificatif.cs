@@ -1,4 +1,4 @@
-﻿namespace GestionAbsence
+﻿namespace GestionAbsence.Models
 {
     public class Justificatif
     {

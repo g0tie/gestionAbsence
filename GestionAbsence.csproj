@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <None Remove="gestionAbsence.db" />
-    <None Remove="import.csv" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,12 +24,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="import.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
 </Project>

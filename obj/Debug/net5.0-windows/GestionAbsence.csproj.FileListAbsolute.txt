@@ -119,4 +119,5 @@ C:\Users\Romain\source\repos\GestionAbsence\obj\Debug\net5.0-windows\GestionAbse
 C:\Users\Romain\source\repos\GestionAbsence\obj\Debug\net5.0-windows\ref\GestionAbsence.dll
 C:\Users\Romain\source\repos\GestionAbsence\bin\Debug\net5.0-windows\gestionAbsence.db
 C:\Users\Romain\source\repos\GestionAbsence\obj\Debug\net5.0-windows\GestionAbsence_Content.g.cs
-C:\Users\Romain\source\repos\GestionAbsence\bin\Debug\net5.0-windows\import.csv
+C:\Users\Romain\source\repos\GestionAbsence\obj\Debug\net5.0-windows\Admin.g.cs
+C:\Users\Romain\source\repos\GestionAbsence\obj\Debug\net5.0-windows\Admin.baml
