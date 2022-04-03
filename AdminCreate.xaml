@@ -1,0 +1,24 @@
+﻿<Window x:Class="GestionAbsence.AdminCreate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionAbsence"
+        mc:Ignorable="d"
+        Title="AdminCreate" Height="450" Width="800">
+    <Grid x:Name="userForm">
+        <Label Content="Nom" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="nomInput" TextWrapping="Wrap" Width="120" Margin="0,26,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Nom}" />
+        <Label Content="Prenom" Margin="0,44,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox x:Name="prenomInput" TextWrapping="Wrap" Width="120" Margin="0,70,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Prenom}" />
+        <Label Content="Email" Margin="0,88,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="mailInput" TextWrapping="Wrap" Width="120" Margin="0,114,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Mail}"/>
+        <Label Content="Mot de passe" Margin="0,132,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="passwordInput" TextWrapping="Wrap" Width="120" Margin="0,158,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Password}"/>
+        <Label Content="Role" Margin="0,176,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ComboBox x:Name="selectRole" Width="120" Margin="0,202,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" DisplayMemberPath="Text"/>
+        <Button x:Name="addUserButton" Content="Ajouter" Margin="1,255,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="73" Click="AddUserButton_Click"/>
+        <Button x:Name="closeButton" Content="Annuler" Margin="79,255,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="73" Click="CloseButton_Click"/>
+
+    </Grid>
+</Window>

@@ -22,18 +22,21 @@ namespace GestionAbsence
         {
             using GestionAbsenceDbContext db = new();
             _ = db.Absences.Add(absence);
+            _ = db.SaveChanges();
         }
 
         public static void Delete(Absence absence)
         {
             using GestionAbsenceDbContext db = new();
             _ = db.Absences.Remove(absence);
+            _ = db.SaveChanges();
         }
 
         public static void Update(Absence absence)
         {
             using GestionAbsenceDbContext db = new();
             _ = db.Absences.Update(absence);
+            _ = db.SaveChanges();
         }
     }
 }

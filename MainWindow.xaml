@@ -20,14 +20,19 @@
             <TextBox x:Name="login" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Width="195" Grid.Row="1"/>
         </Grid>
         <Grid VerticalAlignment="Top" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="73*"/>
+                <ColumnDefinition Width="122*"/>
+            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <TextBox x:Name="password" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Width="195" Grid.Row="1" Height="18"/>
-            <Label Content="Mot de passe" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.479,0.579" Height="26" Width="81"/>
+            <Label Content="Mot de passe" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.479,0.579" Height="26" Width="81" Grid.ColumnSpan="2"/>
 
         </Grid>
+        <Button x:Name="btnConnexion" Content="Connexion" HorizontalAlignment="Left" Margin="98,80,0,0" Grid.Row="1" VerticalAlignment="Top" Width="97" Click="btnConnexion_Click"/>
+        <PasswordBox x:Name="password" Margin="0,31,0,0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Width="195" Height="19"/>
 
     </Grid>
 </Window>
