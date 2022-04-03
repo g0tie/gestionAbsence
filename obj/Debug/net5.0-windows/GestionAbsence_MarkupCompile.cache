@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\Romain\source\repos\GestionAbsence\App.xaml
-2-1741807913
+4-500190347
 1-1779259535
-20-873020290
-214-2002385430
-Admin.xaml;MainWindow.xaml;
+21600978402
+224699739436
+Admin.xaml;AdminCreate.xaml;AdminUpdate.xaml;MainWindow.xaml;
 
 False
 

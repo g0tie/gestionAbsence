@@ -65,7 +65,6 @@ namespace GestionAbsence.Models
         {
             using GestionAbsenceDbContext db = new();
             Role = db.Roles.Where(c => c.Id == RoleId).First();
-
         }
 
     }

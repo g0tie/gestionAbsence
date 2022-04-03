@@ -121,3 +121,8 @@ C:\Users\Romain\source\repos\GestionAbsence\bin\Debug\net5.0-windows\gestionAbse
 C:\Users\Romain\source\repos\GestionAbsence\obj\Debug\net5.0-windows\GestionAbsence_Content.g.cs
 C:\Users\Romain\source\repos\GestionAbsence\obj\Debug\net5.0-windows\Admin.g.cs
 C:\Users\Romain\source\repos\GestionAbsence\obj\Debug\net5.0-windows\Admin.baml
+C:\Users\Romain\source\repos\GestionAbsence\obj\Debug\net5.0-windows\AdminCreate.g.cs
+C:\Users\Romain\source\repos\GestionAbsence\obj\Debug\net5.0-windows\AdminCreate.baml
+C:\Users\Romain\source\repos\GestionAbsence\obj\Debug\net5.0-windows\AdminUpdate.g.cs
+C:\Users\Romain\source\repos\GestionAbsence\obj\Debug\net5.0-windows\AdminUpdate.baml
+C:\Users\Romain\source\repos\GestionAbsence\bin\Debug\net5.0-windows\Ookii.Dialogs.Wpf.dll

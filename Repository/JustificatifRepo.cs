@@ -22,18 +22,21 @@ namespace GestionAbsence
         {
             using GestionAbsenceDbContext db = new();
             _ = db.Justificatifs.Add(justificatif);
+            _ = db.SaveChanges();
         }
 
         public static void Delete(Justificatif justificatif)
         {
             using GestionAbsenceDbContext db = new();
             _ = db.Justificatifs.Remove(justificatif);
+            _ = db.SaveChanges();
         }
 
         public static void Update(Justificatif justificatif)
         {
             using GestionAbsenceDbContext db = new();
             _ = db.Justificatifs.Update(justificatif);
+            _ = db.SaveChanges();
         }
     }
 }
