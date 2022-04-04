@@ -26,5 +26,22 @@ namespace GestionAbsence
             using GestionAbsenceDbContext db = new();
             var roles = db.Users.Include(i => i.Role).ToList();
         }
+
+        private void btnConnexion_Click(object sender, RoutedEventArgs e)
+        {
+            var Username = login.Text;
+            var Password = password.Password;
+
+            using (GestionAbsenceDbContext context = new GestionAbsenceDbContext())
+            {
+                bool userfound = context.Users.Any(user => user.Mail == Username && user.Password == Password);
+
+                if (userfound)
+                {
+                    new Admin().Show();
+                    this.Hide();
+                }
+            }
+        }
     }
 }
