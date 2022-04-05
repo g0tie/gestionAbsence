@@ -201,3 +201,4 @@ C:\Users\lefra\Source\Repos\gestionAbsence\obj\Debug\net5.0-windows\Admin.baml
 C:\Users\lefra\Source\Repos\gestionAbsence\obj\Debug\net5.0-windows\AdminCreate.baml
 C:\Users\lefra\Source\Repos\gestionAbsence\obj\Debug\net5.0-windows\AdminUpdate.baml
 C:\Users\lefra\Source\Repos\gestionAbsence\bin\Debug\net5.0-windows\BCrypt.Net-Next.dll
+C:\Users\Lenovo\Desktop\exo\gestionAbsence\bin\Debug\net5.0-windows\BCrypt.Net-Next.dll
