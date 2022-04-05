@@ -41,6 +41,10 @@ namespace GestionAbsence
                     new Admin().Show();
                     this.Hide();
                 }
+                else
+                {
+                    MessageBox.Show("nom d'utilisateur ou mdp incorrecte");
+                }
             }
         }
     }
