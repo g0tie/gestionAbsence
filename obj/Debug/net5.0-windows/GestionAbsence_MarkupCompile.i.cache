@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Romain\source\repos\GestionAbsence\obj\Debug\net5.0-windows\
+C:\Users\lefra\Source\Repos\gestionAbsence\obj\Debug\net5.0-windows\
 GestionAbsence
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\Romain\source\repos\GestionAbsence\App.xaml
+C:\Users\lefra\Source\Repos\gestionAbsence\App.xaml
 4-500190347
 1-1779259535
-231527858767
-2231100901447
+26-432238423
+224-17934089
 Admin.xaml;AdminCreate.xaml;AdminUpdate.xaml;MainWindow.xaml;
 
-True
+False
 

@@ -56,7 +56,6 @@ C:\Users\lefra\Source\Repos\gestionAbsence\bin\Debug\net5.0-windows\runtimes\win
 C:\Users\lefra\Source\Repos\gestionAbsence\bin\Debug\net5.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\lefra\Source\Repos\gestionAbsence\bin\Debug\net5.0-windows\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\lefra\Source\Repos\gestionAbsence\obj\Debug\net5.0-windows\GestionAbsence.csproj.CopyComplete
-C:\Users\lefra\Source\Repos\gestionAbsence\bin\Debug\net5.0-windows\TinyCsvParser.dll
 C:\Users\lefra\Source\Repos\gestionAbsence\bin\Debug\net5.0-windows\CsvHelper.dll
 C:\Users\Romain\source\repos\GestionAbsence\bin\Debug\net5.0-windows\GestionAbsence.exe
 C:\Users\Romain\source\repos\GestionAbsence\bin\Debug\net5.0-windows\GestionAbsence.deps.json
@@ -193,3 +192,12 @@ C:\Users\Lenovo\Desktop\exo\gestionAbsence\obj\Debug\net5.0-windows\refint\Gesti
 C:\Users\Lenovo\Desktop\exo\gestionAbsence\obj\Debug\net5.0-windows\GestionAbsence.pdb
 C:\Users\Lenovo\Desktop\exo\gestionAbsence\obj\Debug\net5.0-windows\GestionAbsence.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\exo\gestionAbsence\obj\Debug\net5.0-windows\ref\GestionAbsence.dll
+C:\Users\lefra\Source\Repos\gestionAbsence\bin\Debug\net5.0-windows\gestionAbsence.db
+C:\Users\lefra\Source\Repos\gestionAbsence\obj\Debug\net5.0-windows\Admin.g.cs
+C:\Users\lefra\Source\Repos\gestionAbsence\obj\Debug\net5.0-windows\AdminCreate.g.cs
+C:\Users\lefra\Source\Repos\gestionAbsence\obj\Debug\net5.0-windows\AdminUpdate.g.cs
+C:\Users\lefra\Source\Repos\gestionAbsence\obj\Debug\net5.0-windows\GestionAbsence_Content.g.cs
+C:\Users\lefra\Source\Repos\gestionAbsence\obj\Debug\net5.0-windows\Admin.baml
+C:\Users\lefra\Source\Repos\gestionAbsence\obj\Debug\net5.0-windows\AdminCreate.baml
+C:\Users\lefra\Source\Repos\gestionAbsence\obj\Debug\net5.0-windows\AdminUpdate.baml
+C:\Users\lefra\Source\Repos\gestionAbsence\bin\Debug\net5.0-windows\BCrypt.Net-Next.dll

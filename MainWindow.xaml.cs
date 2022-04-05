@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.EntityFrameworkCore;
+
+using GestionAbsence.Services;
 namespace GestionAbsence
 {
     /// <summary>
@@ -34,9 +36,9 @@ namespace GestionAbsence
 
             using (GestionAbsenceDbContext context = new GestionAbsenceDbContext())
             {
-                bool userfound = context.Users.Any(user => user.Mail == Username && user.Password == Password);
+                Models.User userfound = context.Users.First(x => x.Mail == Username);
 
-                if (userfound)
+                if (BcryptService.ValidatePassword(Password, userfound.Password))
                 {
                     new Admin().Show();
                     this.Hide();

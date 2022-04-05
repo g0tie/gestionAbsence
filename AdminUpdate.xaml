@@ -14,10 +14,10 @@
         <Label Content="Email" Margin="0,88,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBox x:Name="mailInput" TextWrapping="Wrap" Width="120" Margin="0,114,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Mail}"/>
         <Label Content="Mot de passe" Margin="0,132,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBox x:Name="passwordInput" TextWrapping="Wrap" Width="120" Margin="0,158,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Password}"/>
+        <TextBox x:Name="passwordInput" TextWrapping="Wrap" Width="120" Margin="0,158,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Content="Role" Margin="0,176,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <ComboBox x:Name="selectRole" Width="120" Margin="0,202,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" DisplayMemberPath="Text"/>
-        <Button x:Name="updateUserButton" Content="Modifier" Margin="1,255,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="73" Click="updateUserButton_Click"/>
+        <Button x:Name="updateUserButton" Content="Modifier" Margin="1,255,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="73" Click="UpdateUserButton_Click"/>
         <Button x:Name="closeButton" Content="Annuler" Margin="79,255,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="73" Click="CloseButton_Click" />
 
     </Grid>
