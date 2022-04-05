@@ -12,7 +12,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using GestionAbsence.Repository;
+using GestionAbsence.Services;
 namespace GestionAbsence
 {
     /// <summary>
@@ -32,10 +33,10 @@ namespace GestionAbsence
         }
         private void LoadRoles()
         {
-            selectRole.Items.Add(new { Text = "Admin", Value = 1 });
-            selectRole.Items.Add(new { Text = "Formateur", Value = 2 });
-            selectRole.Items.Add(new { Text = "Secretaire", Value = 3 });
-            selectRole.Items.Add(new { Text = "Apprenant", Value = 4 });
+            _ = selectRole.Items.Add(new { Text = "Admin", Value = 1 });
+            _ = selectRole.Items.Add(new { Text = "Formateur", Value = 2 });
+            _ = selectRole.Items.Add(new { Text = "Secretaire", Value = 3 });
+            _ = selectRole.Items.Add(new { Text = "Apprenant", Value = 4 });
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
@@ -43,7 +44,7 @@ namespace GestionAbsence
             Close();
         }
 
-        private void updateUserButton_Click(object sender, RoutedEventArgs e)
+        private void UpdateUserButton_Click(object sender, RoutedEventArgs e)
         {
             if (user.Nom == null || user.Nom == "")
             {
@@ -61,11 +62,9 @@ namespace GestionAbsence
                 _ = MessageBox.Show("Veuillez saisir une adresse mail");
                 return;
             }
-
-            if (user.Password == null || user.Password == "")
+            if (passwordInput.Text != null || passwordInput.Text != "")
             {
-                _ = MessageBox.Show("Veuillez saisir un mot de passe");
-                return;
+                user.Password = BcryptService.HashPassword(passwordInput.Text);
             }
 
             user.RoleId = (selectRole.SelectedItem as dynamic).Value;

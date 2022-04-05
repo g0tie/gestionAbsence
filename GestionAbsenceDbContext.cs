@@ -7,6 +7,7 @@ using GestionAbsence.Models;
 using CsvHelper.Configuration;
 using System.Collections.Generic;
 using System.Linq;
+using GestionAbsence.Services;
 
 namespace GestionAbsence
 {
@@ -25,10 +26,10 @@ namespace GestionAbsence
 
             var users = new User[]
             {
-                new User { Id = 1, Nom= "Admin", Prenom="Admin", Mail="Admin@gmail.com", Password="Admin", RoleId=1},
-                new User { Id = 2, Nom= "Formateur", Prenom="Formateur", Mail="Formateur@gmail.com", Password="Formateur", RoleId=2},
-                new User { Id = 3, Nom= "Secretaire", Prenom="Secretaire", Mail="Secretaire@gmail.com", Password="Secretaire", RoleId=3},
-                new User { Id = 4, Nom= "Apprenant", Prenom="Apprenant", Mail="Apprenant@gmail.com", Password="Apprenant", RoleId=4},
+                new User { Id = 1, Nom= "Admin", Prenom="Admin", Mail="Admin@gmail.com", Password=BcryptService.HashPassword( "Admin"), RoleId=1},
+                new User { Id = 2, Nom= "Formateur", Prenom="Formateur", Mail="Formateur@gmail.com", Password=BcryptService.HashPassword( "Formateur"), RoleId=2},
+                new User { Id = 3, Nom= "Secretaire", Prenom="Secretaire", Mail="Secretaire@gmail.com", Password=BcryptService.HashPassword( "Secretaire"), RoleId=3},
+                new User { Id = 4, Nom= "Apprenant", Prenom="Apprenant", Mail="Apprenant@gmail.com", Password=BcryptService.HashPassword( "Apprenant"), RoleId=4},
             };
 
             modelBuilder.Entity<Role>().HasData(roles);
