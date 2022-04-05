@@ -193,3 +193,9 @@ C:\Users\Lenovo\Desktop\exo\gestionAbsence\obj\Debug\net5.0-windows\refint\Gesti
 C:\Users\Lenovo\Desktop\exo\gestionAbsence\obj\Debug\net5.0-windows\GestionAbsence.pdb
 C:\Users\Lenovo\Desktop\exo\gestionAbsence\obj\Debug\net5.0-windows\GestionAbsence.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\exo\gestionAbsence\obj\Debug\net5.0-windows\ref\GestionAbsence.dll
+C:\Users\Lenovo\Desktop\exo\gestionAbsence\obj\Debug\net5.0-windows\Apprenant.g.cs
+C:\Users\Lenovo\Desktop\exo\gestionAbsence\obj\Debug\net5.0-windows\Formateur.g.cs
+C:\Users\Lenovo\Desktop\exo\gestionAbsence\obj\Debug\net5.0-windows\Secretaire.g.cs
+C:\Users\Lenovo\Desktop\exo\gestionAbsence\obj\Debug\net5.0-windows\Apprenant.baml
+C:\Users\Lenovo\Desktop\exo\gestionAbsence\obj\Debug\net5.0-windows\Formateur.baml
+C:\Users\Lenovo\Desktop\exo\gestionAbsence\obj\Debug\net5.0-windows\Secretaire.baml

@@ -34,11 +34,28 @@ namespace GestionAbsence
 
             using (GestionAbsenceDbContext context = new GestionAbsenceDbContext())
             {
-                bool userfound = context.Users.Any(user => user.Mail == Username && user.Password == Password);
+                var userfound = context.Users.Any(user => user.Mail == Username && user.Password == Password && user.RoleId == 1);
+                var userfound2 = context.Users.Any(user => user.Mail == Username && user.Password == Password && user.RoleId == 2);
+                var userfound3 = context.Users.Any(user => user.Mail == Username && user.Password == Password && user.RoleId == 3);
+                var userfound4 = context.Users.Any(user => user.Mail == Username && user.Password == Password && user.RoleId == 4);
 
                 if (userfound)
+                {    
+                  new Admin().Show();
+                  this.Hide();
+                }else if (userfound2)
                 {
-                    new Admin().Show();
+                    new Formateur().Show();
+                    this.Hide();
+                }
+                else if (userfound3)
+                {
+                    new Secretaire().Show();
+                    this.Hide();
+                }
+                else if (userfound4)
+                {
+                    new Apprenant().Show();
                     this.Hide();
                 }
                 else
