@@ -1149,23 +1149,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lefra\\.nuget\\packages\\": {},
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lefra\\Source\\Repos\\gestionAbsence\\GestionAbsence.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\exo\\gestionAbsence\\GestionAbsence.csproj",
       "projectName": "GestionAbsence",
-      "projectPath": "C:\\Users\\lefra\\Source\\Repos\\gestionAbsence\\GestionAbsence.csproj",
-      "packagesPath": "C:\\Users\\lefra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lefra\\Source\\Repos\\gestionAbsence\\obj\\",
+      "projectPath": "C:\\Users\\Lenovo\\Desktop\\exo\\gestionAbsence\\GestionAbsence.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lenovo\\Desktop\\exo\\gestionAbsence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\lefra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1233,7 +1233,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

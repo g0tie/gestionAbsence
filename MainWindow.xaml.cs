@@ -13,8 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.EntityFrameworkCore;
-
-using GestionAbsence.Services;
 namespace GestionAbsence
 {
     /// <summary>
@@ -36,12 +34,33 @@ namespace GestionAbsence
 
             using (GestionAbsenceDbContext context = new GestionAbsenceDbContext())
             {
-                Models.User userfound = context.Users.First(x => x.Mail == Username);
+                var userfound = context.Users.Any(user => user.Mail == Username && user.Password == Password && user.RoleId == 1);
+                var userfound2 = context.Users.Any(user => user.Mail == Username && user.Password == Password && user.RoleId == 2);
+                var userfound3 = context.Users.Any(user => user.Mail == Username && user.Password == Password && user.RoleId == 3);
+                var userfound4 = context.Users.Any(user => user.Mail == Username && user.Password == Password && user.RoleId == 4);
 
-                if (BcryptService.ValidatePassword(Password, userfound.Password))
+                if (userfound)
+                {    
+                  new Admin().Show();
+                  this.Hide();
+                }else if (userfound2)
                 {
-                    new Admin().Show();
+                    new Formateur().Show();
                     this.Hide();
+                }
+                else if (userfound3)
+                {
+                    new Secretaire().Show();
+                    this.Hide();
+                }
+                else if (userfound4)
+                {
+                    new Apprenant().Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("nom d'utilisateur ou mdp incorrecte");
                 }
             }
         }
