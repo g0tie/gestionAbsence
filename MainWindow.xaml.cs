@@ -34,26 +34,25 @@ namespace GestionAbsence
 
             using (GestionAbsenceDbContext context = new GestionAbsenceDbContext())
             {
-                var userfound = context.Users.Any(user => user.Mail == Username && user.Password == Password && user.RoleId == 1);
-                var userfound2 = context.Users.Any(user => user.Mail == Username && user.Password == Password && user.RoleId == 2);
-                var userfound3 = context.Users.Any(user => user.Mail == Username && user.Password == Password && user.RoleId == 3);
-                var userfound4 = context.Users.Any(user => user.Mail == Username && user.Password == Password && user.RoleId == 4);
+               Models.User userfound = context.Users.First(x => x.Mail == Username);
 
-                if (userfound)
-                {    
-                  new Admin().Show();
-                  this.Hide();
-                }else if (userfound2)
+                if (BcryptService.ValidatePassword(Password, userfound.Password))
                 {
-                    new Formateur().Show();
-                    this.Hide();
-                }
-                else if (userfound3)
+                    if (userfound.RoleId == 1)
+                    {    
+                        new Admin().Show();
+                        this.Hide();
+                    } else if (userfound.RoleId == 2)
+                    {
+                        new Formateur().Show();
+                        this.Hide();
+                    }
+                else if (userfound.RoleId == 3)
                 {
                     new Secretaire().Show();
                     this.Hide();
                 }
-                else if (userfound4)
+                else if (userfound.RoleId == 4)
                 {
                     new Apprenant().Show();
                     this.Hide();
@@ -62,6 +61,9 @@ namespace GestionAbsence
                 {
                     MessageBox.Show("nom d'utilisateur ou mdp incorrecte");
                 }
+                }
+
+                
             }
         }
     }
