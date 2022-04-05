@@ -12,6 +12,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using GestionAbsence.Repository;
+using GestionAbsence.Services;
 
 namespace GestionAbsence
 {
@@ -61,6 +63,7 @@ namespace GestionAbsence
                 _ = MessageBox.Show("Veuillez saisir un mot de passe");
                 return;
             }
+            user.Password = BcryptService.HashPassword(user.Password);
 
             if (selectRole.SelectedIndex == -1)
             {

@@ -1,4 +1,5 @@
 ﻿using CsvHelper;
+using CsvHelper.Configuration;
 using GestionAbsence.Models;
 using Microsoft.Win32;
 using System;
@@ -16,6 +17,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using GestionAbsence.Repository;
 
 namespace GestionAbsence
 {
@@ -30,7 +32,17 @@ namespace GestionAbsence
             LoadUsers();
         }
         List<User> users;
+        public sealed class FooMap : ClassMap<User>
+        {
+            public FooMap()
+            {
+                AutoMap(CultureInfo.InvariantCulture);
+                _ = Map(m => m.Id).Ignore();
+                _ = Map(m => m.Role.Id).Ignore();
+                _ = Map(m => m.Role.Libelle).Ignore();
 
+            }
+        }
         public void LoadUsers()
         {
             selectRole.Items.Clear();
@@ -74,11 +86,7 @@ namespace GestionAbsence
             {
                 filteredUser = filteredUser.Where((user) =>
                 {
-                    if (user.Nom.ToLower().Contains(nomInput.Text.ToLower()) || user.Prenom.ToLower().Contains(nomInput.Text.ToLower()))
-                    {
-                        return true;
-                    }
-                    return false;
+                    return user.Nom.ToLower().Contains(nomInput.Text.ToLower()) || user.Prenom.ToLower().Contains(nomInput.Text.ToLower());
                 });
             }
             if (selectRole.SelectedIndex != -1 && selectRole.SelectedIndex != 0)
@@ -132,17 +140,16 @@ namespace GestionAbsence
 
         private void ExportButton_Click(object sender, RoutedEventArgs e)
         {
-            using (var dialog = new System.Windows.Forms.FolderBrowserDialog())
+            using System.Windows.Forms.FolderBrowserDialog dialog = new();
+            System.Windows.Forms.DialogResult result = dialog.ShowDialog();
+            if (result != System.Windows.Forms.DialogResult.Cancel)
             {
-                System.Windows.Forms.DialogResult result = dialog.ShowDialog();
-                if (result.ToString() != string.Empty)
-                {
-                    string path = dialog.SelectedPath;
-                    using var writer = new StreamWriter(path + "\\export.csv");
-                    using var csv = new CsvWriter(writer, CultureInfo.InvariantCulture);
-                    csv.WriteRecords(userList.ItemsSource);
-                    _ = MessageBox.Show("Export sauvegardé");
-                }
+                string path = dialog.SelectedPath;
+                using StreamWriter writer = new(path + "\\export.csv");
+                using CsvWriter csv = new(writer, CultureInfo.InvariantCulture);
+                _ = csv.Context.RegisterClassMap<FooMap>();
+                csv.WriteRecords(userList.ItemsSource);
+                _ = MessageBox.Show("Export sauvegardé");
             }
         }
 
@@ -154,13 +161,16 @@ namespace GestionAbsence
             };
             if (openFileDialog.ShowDialog() == true)
             {
-                using var reader = new StreamReader(openFileDialog.FileName);
-                using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
-                var users = csv.GetRecords<User>();
-                foreach (var user in users)
+                using StreamReader reader = new(openFileDialog.FileName);
+                using CsvReader csv = new(reader, CultureInfo.InvariantCulture);
+                _ = csv.Context.RegisterClassMap<FooMap>();
+                IEnumerable<User> users = csv.GetRecords<User>();
+                foreach (User user in users)
                 {
+                    user.Role = null;
                     UserRepo.Add(user);
                 }
+                LoadUsers();
             }
         }
     }

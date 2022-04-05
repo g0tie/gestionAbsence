@@ -2,7 +2,7 @@
 using System.Linq;
 using GestionAbsence.Models;
 
-namespace GestionAbsence
+namespace GestionAbsence.Repository
 {
     public class JustificatifRepo
     {
